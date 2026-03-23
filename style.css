@@ -1,0 +1,51 @@
+:root {
+    --color1: #ff1d44;
+    --color2: #fbebaf;
+    --color3: #74bf9d;
+    --color4: #56a292;
+    --color5: #1c8080;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #1c8080;
+}
+
+#display {
+    width: 300px;
+    height: 100px;
+    border: 1px solid black;
+    background-color: var(--color4);
+    text-align: right;
+    font-size: 20px;
+}
+
+#buttons {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 100px;
+    height: auto;
+    border: 1px solid black;
+}
+
+button {
+    width: 75px; /* Largura fixa para formar o grid da calculadora */
+    height: 50px;
+    background-color: var(--color3);
+    color: var(--color2); /* Corrigido para ficar visível */
+    border: 1px var(--color5);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#equal {
+    background-color: var(--color1);
+    width: 75px; /* Corrigido para não vazar do layout */
+    height: 100px;
+    color: var(--color2); 
+}
